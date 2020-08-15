@@ -1,6 +1,10 @@
 # police-shooting-analysis
 Project aimed to understanding statistics around fatal police shootings in America.
 
+#Original Dataset
+The CSV file was pulled from a github repo by the Washington Post  
+https://github.com/washingtonpost/data-police-shootings
+
 # Question 1)
 How many victims were there under the age of 18 in the data set?
 
