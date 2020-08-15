@@ -1,7 +1,7 @@
 # police-shooting-analysis
 Project aimed to understanding statistics around fatal police shootings in America.
 
-#Original Dataset
+# Original Dataset
 The CSV file was pulled from a github repo by the Washington Post  
 https://github.com/washingtonpost/data-police-shootings
 
