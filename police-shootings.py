@@ -24,9 +24,8 @@ with open('fatal-police-shooting-data.csv', 'r') as data_set:
         race = row[7]
         state = row[9]
 
-        '''
-        Validates age of victim and adds to list if underage
-        '''
+        
+        # Validates age of victim and adds to list if less than 18 years old
         if(age != ''):
             age = int(age)
             if(age < 18):
@@ -34,12 +33,14 @@ with open('fatal-police-shooting-data.csv', 'r') as data_set:
                 victim = dict({"name": name, "age": age, "date": date,
                                "armed": armed, "race": race, "state": state})
                 under_age_victims_list.append(victim)
+        
+        # Validates weather victim was unarmed and adds to list
         if(armed == 'unarmed' or armed == "toy weapon"):
             unarmed_victims += 1
             unarmed_victim = dict({"name": name, "age": age, "date": date,
                                    "armed": armed, "race": race, "state": state})
             unarmed_victims_list.append(unarmed_victim)
-        total_victims += 1
+        total_victims += 1 
 
     print(f'Total victims: {total_victims}')
     print(f'Underage victims: {under_age_victims}')
